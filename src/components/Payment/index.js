@@ -33,7 +33,7 @@ const paymentOptionsList = [
 ]
 
 const Payment = () => {
-  const {cartList} = useContext(CartContext)
+  const {cartList, removeAllCartItems} = useContext(CartContext)
 
   const [paymentMethod, setPaymentMethod] = useState('')
   const [isOrderPlaced, setIsOrderPlaced] = useState(false)
@@ -43,7 +43,10 @@ const Payment = () => {
     setPaymentMethod(id)
   }
 
-  const onPlaceOrder = () => setIsOrderPlaced(true)
+  const onPlaceOrder = async () => {
+    await setIsOrderPlaced(true)
+    setTimeout(removeAllCartItems, 3000)
+  }
 
   const getTotalPrice = () =>
     cartList.reduce((acc, item) => acc + item.quantity * item.price, 0)

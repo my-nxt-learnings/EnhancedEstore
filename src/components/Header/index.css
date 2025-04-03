@@ -54,7 +54,19 @@
 }
 
 .website-logo {
-  width: 110px;
+  width: 100px;
+
+  font-family: 'Poppins', sans-serif; /* Modern, sleek font */
+  color: #0967d2; /* Brand color */
+  text-transform: uppercase; /* Makes it stand out */
+
+  border: 1px solid #0967d2;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 5px;
+}
+.link-item {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -66,8 +78,9 @@
 .nav-menu {
   display: flex;
   flex-direction: row;
+
   justify-content: flex-end;
-  align-self: flex-end;
+  align-self: center;
   flex: 1;
   list-style-type: none;
   margin-top: 0px;

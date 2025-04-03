@@ -9,6 +9,32 @@
   margin: auto;
 }
 
+.websitelogo {
+  width: 180px;
+
+  font-family: 'Poppins', sans-serif; /* Modern, sleek font */
+  color: #0967d2; /* Brand color */
+  text-transform: uppercase; /* Makes it stand out */
+
+  border: 1px solid #0967d2;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.websitelogomob{
+   width: 180px;
+
+  font-family: 'Poppins', sans-serif; /* Modern, sleek font */
+  color: #0967d2; /* Brand color */
+  text-transform: uppercase; /* Makes it stand out */
+
+  border: 1px solid #0967d2;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 992px) {
   .login-form-container {
     flex-direction: row;
@@ -16,14 +42,10 @@
   }
 }
 
-.login-website-logo-mobile-img {
-  width: 165px;
-  margin-top: 50px;
-  margin-bottom: 35px;
-}
+
 
 @media screen and (min-width: 992px) {
-  .login-website-logo-mobile-img {
+  .websitelogomob{
     display: none;
   }
 }
@@ -41,12 +63,9 @@
   }
 }
 
-.login-website-logo-desktop-img {
-  width: 185px;
-}
 
 @media screen and (max-width: 991px) {
-  .login-website-logo-desktop-img {
+  .websitelogo {
     display: none;
   }
 }
@@ -132,7 +151,9 @@
   margin-top: 3px;
   margin-bottom: 0px;
   font-family: 'Roboto';
-  font-size: 12px;
+
   line-height: 16px;
   color: #ff0b37;
 }
+
+

@@ -63,7 +63,7 @@ class PrimeDealsSection extends Component {
   renderPrimeDealsListView = () => {
     const {primeDeals} = this.state
     return (
-      <div>
+      <div className="primedealssection">
         <h1 className="primedeals-list-heading">Exclusive Prime Deals</h1>
         <ul className="products-list">
           {primeDeals.map(product => (
